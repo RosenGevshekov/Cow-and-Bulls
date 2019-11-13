@@ -9,8 +9,11 @@ Database::Database():
 	CString sDriver = L"ODBC Driver 17 for SQL Server";						//set the Driver
 	CString path = L"C:\\Program Files\\Microsoft SQL Server\\MSSQL13.SQLEXPRESS\\MSSQL\\DATA\\test.mdf"; //set path to the DB
 	CString serverName = L"DESKTOP-A8IF336\\SQLEXPRESS";				//set Server Name
+	CString nameDB = L"test";											//set DATABASE Name
+	CString user = L"Player";											//set user Name for access DataBase
+	CString pass = L"asddsafghhgf";											//set password for access DataBase
 
-	sDsn.Format(L"ODBC;DRIVER={%s};Server=%s;DSN='';DBQ=%s;DATABASE=test; UID=Player; PWD=asddsafghhgf", sDriver,serverName, path); // DSN String
+	sDsn.Format(L"ODBC;DRIVER={%s};Server=%s;DSN='';DBQ=%s;DATABASE=%s; UID=%s; PWD=%s", sDriver,serverName, path, nameDB, user, pass); // DSN String
 }
 
 Database::~Database() {
