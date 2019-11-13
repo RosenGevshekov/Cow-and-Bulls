@@ -11,3 +11,4 @@ Connecting to SQL Server
 6. Change the value of user variable to username, that have access to the DataBase . --> on line 13
 7. Change the value of user variable to password for the user . --> on line 14
 
+Enjoy the Game!
