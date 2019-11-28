@@ -12,3 +12,4 @@ Connecting to SQL Server
 7. Change the value of user variable to password for the user . --> on line 14
 
 Enjoy the Game!
+hi
